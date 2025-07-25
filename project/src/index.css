@@ -1,0 +1,27 @@
+/* Mengimpor font 'Inter' dari Google Fonts untuk tampilan yang bersih dan modern */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Mengatur gaya dasar untuk body */
+  body {
+    @apply bg-background-dark text-gray-300;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Scrollbar kustom untuk tampilan yang lebih modern dan sesuai tema */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #161B22; /* Warna track scrollbar */
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #30363D; /* Warna thumb scrollbar */
+    border-radius: 10px;
+    border: 2px solid #161B22; /* Border untuk efek 'mengambang' */
+  }
+}
